@@ -62,7 +62,7 @@ if not filtered_data.empty:
         x='bucket_time',
         y='count',
         color='count_type',
-        title='버스 ID 카운트 by Bucket Time\n(잔여좌석 5개 이하인 버스는 빨간색으로 표시)',
+        title=f'{selected_stations} 정류장의 시간대별 버스 운행 수 & 잔여좌석 5식 이하 버스 수',
         color_discrete_map={
             '총 버스 운행 수': 'blue',
             '잔여좌석 5석 이하 버스 수': 'red'
