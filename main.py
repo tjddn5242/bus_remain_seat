@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # 페이지 레이아웃을 wide로 설정 (전체 폭 활용)
-st.set_page_config(page_title="3000번 버스 탈 수 있을까?", layout="wide")
+st.set_page_config(page_title="🚌 3000번 버스 탈 수 있을까?", layout="wide")
 
 st.title("3000번 버스 탈 수 있을까?")
 
