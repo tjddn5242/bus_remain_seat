@@ -53,7 +53,7 @@ if not filtered_data.empty:
     # 범례 이름 변경
     df_melt['count_type'] = df_melt['count_type'].replace({
         'distinct_bus_id_count': '총 버스 운행 수',
-        'warning_bus_id_count': '잔여좌석 5회 이하 버스 수'
+        'warning_bus_id_count': '잔여좌석 5석석 이하 버스 수'
     })
 
     # Plotly Express를 이용해 라인 차트 생성
@@ -65,7 +65,7 @@ if not filtered_data.empty:
         title='버스 ID 카운트 by Bucket Time\n(잔여좌석 5개 이하인 버스는 빨간색으로 표시)',
         color_discrete_map={
             '총 버스 운행 수': 'blue',
-            '잔여좌석 5회 이하 버스 수': 'red'
+            '잔여좌석 5석석 이하 버스 수': 'red'
         }
     )
     fig.update_layout(
